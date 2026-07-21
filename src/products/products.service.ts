@@ -6,6 +6,12 @@ import { UpdateProductDto } from './dto/update-product.dto';
 export class ProductsService {
   create(createProductDto: CreateProductDto) {
     return 'This action adds a new product';
+    // return this.prismaService.product.create({
+    //   data: [
+    //     ...createProductDto,
+    //     quantity: 0
+    //   ]
+    // });
   }
 
   findAll() {
