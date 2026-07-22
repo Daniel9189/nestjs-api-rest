@@ -1,13 +1,26 @@
 GET http://localhost:3000/products
 
 ###
-GET http://localhost:3000/products/5
+GET http://localhost:3000/products/1
 
 ###
 POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Mouse",
+    "price": 76
+}
+
 
 ###
-PATCH http://localhost:3000/products/3
+PATCH http://localhost:3000/products/1
+Content-Type: application/json
+
+{
+    "name": "Notebook Lenovo",
+    "price": 5423
+}
 
 ###
-DELETE http://localhost:3000/products/7
+DELETE http://localhost:3000/products/2
