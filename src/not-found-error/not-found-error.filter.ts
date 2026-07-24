@@ -10,6 +10,6 @@ export class NotFoundErrorFilter implements ExceptionFilter {
     response.status(404).json({
       statusCode: 404,
       message: exception.message,
-    })
+    });
   }
 }
