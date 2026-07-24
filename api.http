@@ -1,24 +1,24 @@
 GET http://localhost:3000/products
 
 ###
-GET http://localhost:3000/products/1
+GET http://localhost:3000/products/45
 
 ###
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    
+    "name": "Produto 2",
+    "price": 654
 }
 
 
 ###
-PATCH http://localhost:3000/products/1
+PATCH http://localhost:3000/products/3
 Content-Type: application/json
 
 {
-    "name": "Notebook Lenovo",
-    "price": 5423
+    "price": 700
 }
 
 ###
