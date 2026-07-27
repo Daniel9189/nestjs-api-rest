@@ -1,4 +1,5 @@
-import { IsDateString, IsInt, IsNotEmpty, IsPositive, IsString } from 'class-validator';
+import { Type } from 'class-transformer';
+import { IsDate, IsInt, IsNotEmpty, IsPositive } from 'class-validator';
 
 export class CreateStockInputDto {
   @IsPositive()
@@ -11,7 +12,8 @@ export class CreateStockInputDto {
   @IsNotEmpty()
   quantity: number;
 
-  @IsDateString()
+  @IsDate()
   @IsNotEmpty()
-  date: string;
+  @Type(() => Date)
+  date: Date;
 }

@@ -23,3 +23,20 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:3000/products/2
+
+
+###
+GET http://localhost:3000/stock-inputs
+
+###
+GET http://localhost:3000/stock-inputs/3
+
+###
+POST http://localhost:3000/stock-inputs
+Content-Type: application/json
+
+{
+    "product_id": 1,
+    "quantity": 32,
+    "date": "2007-05-13"
+}
